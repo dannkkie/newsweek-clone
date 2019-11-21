@@ -7,5 +7,32 @@
 .container-fluid,
 .container {
   max-width: 1310px;
-  background-color: coral;
+}
+
+#header-top {
+  height: 95px;
+  background-color: #f72210;
+  color: white;
+  padding: 20px 10px 15px;
+}
+
+#data-div {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 400px;
+}
+
+.account span > a {
+  color: #f72210;
+  font-weight: bolder;
+}
+
+#data-div span > a {
+  text-transform: uppercase;
+}
+
+#subscribe-btn {
+  background-color: white;
+  padding: 5px 10px 5px;
+  margin-left: 5px;
 }
