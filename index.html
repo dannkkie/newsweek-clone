@@ -1,34 +1,1396 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NewsWeek Clone</title>
+  
+    <!-- CSS BOOSTRAP LINK -->
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Newsweek clone</title>
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+
+   <!-- MY CSS LINK -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div class="container-fluid">
-      <header>
-        <div class="row" id="header-top">
-          <div class="col-sm-4" id="date-div">Thu, Nov 21, 2019</div>
-          <div class="col-sm-4" id="logo">News Week</div>
-          <div class="col-sm-4 account">
-            <span><a href="#">SIGN IN</a></span>
-            <span class="subscribe-btn" id="subscribe-btn"><a href="#">SUBSCRIBE ></a></span>
+    <!-- HEADER -->
+    <header class="page-header container-fluid" id="theHeader">
+      <div class="row d-flex" id="header-top">
+        <div class="d-flex justify-content-start col-lg-4 text-white" id="date">
+          Wed, Nov 22, 2019</div>
+  
+        <div class="col-4 col-lg-4" id="headerLogo">
+          <a class="brand" id="topLogo" href="#"><img src="assets/images/logosm.png"
+              alt="Sticky and Small Navigation Menu Logo Newsweek Page" id="smallImg">
+            <img src="assets/images/newsWeekLogoLarge.JPG" alt="Large Logo at the Center of Newsweek Page" id="largeImg"></a>
+        </div>
+  
+        <div class="col-8 col-lg-4 d-flex justify-content-lg-end" id="signSubs">
+          <a class="lk-2 text-white" id="signIn" href="#">SIGN IN</a>
+          <button id="subscribe">SUBSCRIBE ></button>
+          <img src="assets/images/burger.png" alt="Burguer Icon Top Nav Menu Newsweek Page" id="burguer">
+        </div>
+      </div>
+  
+      <!-- NAV LINKS WHITE -->
+      <div id="whiteNavPart" class="navRow row d-inline-flex container-fluid">
+        <div id="whiteNavLinks" class="col-12 text-dark d-inline-flex">
+          <a id="exceptHere" class="topLi" href="#">U.S.</a>
+          <a class="topLi" href="#">World</a>
+          <a class="topLi" href="#">Business</a>
+          <a class="topLi" href="#">Tech&nbsp;&&nbsp;Science</a>
+          <a class="topLi" href="#">Culture</a>
+          <a class="topLi" href="#">Newsgeek</a>
+          <a class="topLi" href="#">Sports</a>
+          <a class="topLi" href="#">Health</a>
+          <a class="topLi" href="#">Opinion</a>
+          <a class="topLi" href="#">Vantage</a>
+          <input type="text" placeholder="Search" aria-label="Search" id="searchIt">
+          <div id="littleRedBox">
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+  
+      <!-- STICKY NAV IS HERE -->
+      <div class="row" id="imSticky">
+        <div class="col-4" id="stickyTopLogo">
+          <div class="stickyLogo">
+            <img src="assets/images/logosm.png" alt="Sticky Navigation Menu Logo Newsweek Page">
+          </div>
+        </div>
+  
+        <div id="stickyButts" class="col-8">
+          <a class="lk-2 text-white" id="stickySignIn" href="#">SIGN IN</a>
+          <button id="stickySubscribe">SUBSCRIBE ></button>
+          <img src="assets/images/burguer.png" alt="Burguer Icon Top Nav Menu Newsweek Page">
+        </div>
+      </div>
+  
+    </header>
+  
+    <main>
+        <!--BEGINNING OF INSIDEMAIN-->
+        <div id="insideMain" class="contanier-fluid">
+          <div class="row addingPadding">
+
+            <!-- FEATURED STORIES -->
+            <div id="first" class="order-2 col-12 order-md-1 col-md-6 col-lg-3">
+              <div class="sticky-top" id="featureStories">
+                <a href="#" class="sectionTitle">
+                  <h4>FEATURED STORIES</h4>
+                </a>
+        
+                <figure id="one" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/mike-bloomberg-2020-bid.jpg" alt="Filler image for the Newsweek Page 1"></a>
+        
+                  <figcaption class="insideCaption">
+                    <div class="genreDiv">
+                      <a href="#" class="genre">POLITICS</a>
+                    </div>
+        
+                    <a href="#" class="insideCapTitle">
+                      <h2>Mike Bloomberg Launches 2020 Bid 'to Defeat Donald Trump, Rebuild America'</h2>
+                    </a>
+                    <p>"We cannot afford four more years of President Trump's reckless and unethical 
+                      actions," Bloomberg said on his campaign website.</p>
+                  </figcaption>
+                </figure>
+          
+                <figure id="two" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/adam-schiff-chuck-todd-impeachment.png" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                      <div class="genreDiv">
+                        <a href="#" class="genre">POLITICS</a>
+                      </div>
+          
+                    <a href="#" class="insideCapTitle">
+                      <h2>'We're Not Stopping': Schiff Responds to NBC Claim Impeachment Stalling</h2>
+                    </a>
+                    <p>Adam Schiff pushed back against the NBC News host's claim the impeachment inquiry 
+                      appears to be letting President Trump and his alleged co-conspirators off the hook.</p>
+                  </figcaption>
+                </figure>
+          
+                <figure id="three" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/syria-damascus-israel-strike-iran.jpg" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                      <div class="genreDiv">
+                        <a href="#" class="genre">WORLD</a>
+                      </div>
+          
+                    <a href="#" class="insideCapTitle">
+                      <h2>Iran and Israel May Never Get Along, But Learn to Live With Russia in Syria</h2>
+                    </a>
+                    <p>A Russian expert and retired lieutenant-general explains to Newsweek "the key element 
+                      of Russian diplomatic success": talking to everyone, while promoting your own interests.</p>
+                  </figcaption>
+                </figure>
+          
+                <figure id="four" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/americas-best-stem-high-schools-2020.jpg" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                      <div class="genreDiv">
+                         <a href="#" class="genre">SURVEY</a>
+                      </div>
+          
+                    <a href="#" class="insideCapTitle">
+                      <h2>Best STEM High Schools 2020</h2>
+                    </a>
+                    <p>Newsweek partnered with STEM.org to rank America's Best STEM High Schools. We found successful 
+                      schools in every region of the country.</p>
+                  </figcaption>
+                </figure>
+          
+                <figure id="five" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/l2-resized.jpg" alt="Filler image for the Newsweek Page 1"></a>
+        
+                  <figcaption class="insideCaption">
+                      <div class="genreDiv">
+                        <a href="#" class="genre blue">SPONSORED INSIGHT</a>
+                      </div>
+          
+                    <a href="#" class="insideCapTitle">
+                      <h2>The New Conquest Classic From Longines is Bold Yet Refined</h2>
+                    </a>
+                    <p>Longines has combined the femininity of materials and dynamic lines to create the new Conquest 
+                      Classic. Perfectly suited for the women of today, it remains faithful to the brand's iconic 
+                      elegance while offering new dials that mix mother-of-pearl, diamonds and touches of pink.</p>
+                  </figcaption>
+                </figure>
+          
+                <figure id="six" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/ball-state-university.png" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                      <div class="genreDiv">
+                        <a href="#" class="genre blue">SPONSORED INSIGHT</a>
+                      </div>
+          
+                    <a href="#" class="insideCapTitle">
+                      <h2>What Can a Career in Architecture Do For You?</h2>
+                    </a>
+                    <p>Architects do much more than plan and design houses, factories, office buildings, and other structures. You might be 
+                      surprised how diverse the career can be. Find out more.</p>
+                  </figcaption>
+                </figure>
+          
+                <figure id="seven" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/waseda-business-school.jpg" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                      <div class="genreDiv">
+                        <a href="#" class="genre blue">SPONSORED INSIGHT</a>
+                      </div>
+        
+                    <a href="#" class="insideCapTitle">
+                      <h2>EQUIS Accredited Business Schools 2019</h2>
+                    </a>
+                    <p>It is important to check whether a school is accredited by a credible global accreditation body and meets internationally agreed 
+                      quality standards. EQUIS gives you that piece of mind.</p>
+                  </figcaption>
+                </figure>
+          
+                <figure id="eight" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/holiday-cash-contest.png" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                      <div class="genreDiv">
+                        <a href="#" class="genre blue">SWEEPSTAKES</a>
+                      </div>
+          
+                    <a href="#" class="insideCapTitle">
+                      <h2>Win $1,000 Holiday Cash</h2>
+                    </a>
+                    <p>Enter our Holiday Cash Sweepstakes for a chance to unwrap a $1,000 grand prize! Five second place winners will each 
+                      receive a free 12-month digital subscription to Newsweek</p>
+                  </figcaption>
+                </figure>
+
+              </div>
+            </div>
+            <!-- END FEATURE STORIES HAS 2 CLOSING DIVS -->
+            
+            <!-- TOP STORY -->
+            <div id="second" class="order-1 col-sm-12 col-md-6 col-lg-6 containerOf">
+              <div id="topStory">
+                <a href="#" class="sectionTitle">
+                  <h4>TOP STORY</h4>
+                </a>
+        
+                <div class="row insideTopStory">
+                  <figure class="insideFig">
+                    <a href="#" class="figImg"><img src="assets/images/donald-trump.jpg" alt="Filler image for the Newsweek Page 1"></a>
+          
+                    <figcaption class="insideCaption">
+          
+                      <div class="genreDiv">
+                        <a href="#" class="genre">POLITICS</a>
+                      </div>
+          
+                      <a href="#" class="insideCapTitle">
+                        <h2>Donald Trump Confirms Navy Secretary Was Fired Over Handling of SEAL Case</h2>
+                      </a>
+                      <p>Richard Spencer's forced resignation comes after he reportedly threatened to quit when the president declared that he 
+                        would stop the Navy from stripping Eddie Gallagher of the Trident pin.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <!-- CULTURE & TRAVEL -->
+              <div id="cultureTravel">
+                <a href="#" class="sectionTitle">
+                  <h4>CULTURE & TRAVEL</h4>
+                </a>
+  
+                <div class="row insideCulTrav">
+  
+                  <figure class="col-sm-12 col-md-6 col-lg-6 insideFig">
+                    <a href="#" class="figImg"><img src="assets/images/cul-map-airports-banner.jpg" alt="Filler image for the Newsweek Page 1"></a>
+            
+                    <figcaption class="inCultTravCap">       
+                      <a href="#" class="inCulTravTitle">
+                        <h2>Unusual Airports You Might Actually Enjoy Getting Stuck In </h2>
+                      </a>
+                      <p>Airports are often the last place to find joy and wonder—unless you're landing in a National Park, the middle of the Caribbean sea or even directly on sea ice.</p>
+                      <div><a href="#" class="cultGenre">Travel</a></div>
+                    </figcaption>
+                  </figure>
+  
+                  <figure class="col-sm-12 col-md-6 col-lg-6 insideFig">
+                    <a href="#" class="figImg"><img src="assets/images/san-sebastian.jpg" alt="Filler image for the Newsweek Page 1"></a>
+              
+                    <figcaption class="inCultTravCap">       
+                      <a href="#" class="inCulTravTitle">
+                        <h2>Skip the Obvious: Alternatives to Europe's Most Over-Touristed Cities</h2>
+                      </a>
+                      <p>For your 2020 travels, avoid the tourist-trampled spots in Europe and head to these lesser-visited cities instead.</p>
+                      <div><a href="#" class="cultGenre">Europe</a></div>
+                    </figcaption>
+                  </figure>
+  
+                  <figure class="col-sm-12 col-md-6 col-lg-6 insideFig">
+                    <a href="#" class="figImg"><img src="assets/images/ruinart-chalk-caves.jpg" alt="Filler image for the Newsweek Page 1"></a>
+              
+                    <figcaption class="inCultTravCap">       
+                      <a href="#" class="inCulTravTitle">
+                        <h2>Champagne's Hottest New Art Exhibit Is Hidden Nearly 100 Feet Underground</h2>
+                      </a>
+                      <p>In the countdown to its 300-year-anniversary, Ruinart is adding a modern spin to its 800-year-old chalk cellars.</p>
+                      <div><a href="#" class="cultGenre">Champagne</a></div>
+                    </figcaption>
+                  </figure>
+  
+                  <figure class="col-sm-12 col-md-6 col-lg-6 insideFig">
+                    <a href="#" class="figImg"><img src="assets/images/cul-map-music-08-1171109724.jpg" alt="Filler image for the Newsweek Page 1"></a>
+              
+                    <figcaption class="inCultTravCap">       
+                      <a href="#" class="inCulTravTitle">
+                        <h2>Music Meccas Around The World You Need to Visit</h2>
+                      </a>
+                      <p>Music lovers know they'll be able to hear jazz in New Orleans and reggae in Kingston, but here are some other surprising sounds worth taking note of across the globe.</p>
+                      <div><a href="#" class="cultGenre">Music</a></div>
+                    </figcaption>
+                  </figure>           
+  
+                </div>
+              </div>
+              <!-- END CULTURE & TRAVEL -->
+
+              <!-- MORE STORIES -->
+              <div id="moreStories">
+                <a href="#" class="sectionTitle">
+                  <h4>MORE STORIES</h4>
+                </a>
+  
+                <div class="row insideMoreStories">
+  
+                  <div class="innerMoreStories" id="onlyHere">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/robert-anderson-russia-fbi-2016-election-meddling.jpg" alt="Latest News Image 1">
+                    </a>
+  
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Russia's 2016 Meddling Was a 'Military Operation,' Ex-FBI Cyber Expert Says</h2>
+                    </a>
+                    <p>Robert Anderson said that the 2016 interference would not be a one-off, and that Moscow operatives likely never stopped their activities.</p>
+                  </div>
+  
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/alexandria-ocasio-cortez.jpg" alt="Latest News Image 1">
+                    </a>
+    
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>AOC Fires Back at Trump Over His Record of 'Corruption,' 'Jailed Kids'</h2>
+                    </a>
+                    <p>Trump on Sunday launched a series of tweets criticizing members of the Democratic Party and defending himself against impeachment allegations.</p>
+                  </div>
+  
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/ruth-bader-ginsburg.jpg" alt="Latest News Image 1">
+                    </a>
+    
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Justice Ruth Bader Ginsburg Released From Hospital </h2>
+                    </a>
+                    <p>Ginsburg, 86, was being evaluated for a possible infection.</p>
+                  </div>
+  
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/goo-hara.png" alt="Latest News Image 1">
+                    </a>
+    
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Michael Bloomberg Entering 2020 Race an 'Egotistical Charade' says Activist</h2>
+                    </a>
+                    <p>The musician had recently staged a comeback after a suspected suicide attempt in May.</p>
+                  </div>
+                  
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/shaun-king.jpg" alt="Latest News Image 1">
+                    </a>
+    
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Michael Bloomberg Entering 2020 Race an 'Egotistical Charade' says Activist</h2>
+                    </a>
+                    <p>The Black Lives Matter activist spent many years protesting the former Mayor of New York's policing policies.</p>
+                  </div>
+  
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/google-logo.jpg" alt="Latest News Image 1">
+                    </a>
+    
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Google Slammed After Suspending Staff Who Queried Firm's Links to ICE</h2>
+                    </a>
+                    <p>Roughly 200 members of Google's staff gathered at its headquarters in San Francisco to protest the move.</p>
+                  </div>
+    
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/vishal-solanki.jpg" alt="Latest News Image 1">
+                    </a>
+  
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Amazon Customer Outraged To Find 'Baggie Of Drugs' Inside Package</h2>
+                    </a>
+                    <p>Vishal Solanki, of Ontario, Canada, said he used his Amazon Prime membership to order a children's art set, but was stunned to find a baggie containing several kinds of pills inside the same package.</p>
+                  </div>
+    
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/rick-perry-trump-chosen-one.jpg" alt="Latest News Image 1">
+                    </a>
+      
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Fox News Teases Preview of Rick Perry Saying Trump Was God's 'Chosen One'</h2>
+                    </a>
+                    <p>"If you're a believing Christian, you understand God's plan for the people who rule and judge over us on this planet in our government," Perry said.</p>
+                  </div>
+    
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/nyc-subway.jpg" alt="Latest News Image 1">
+                    </a>
+      
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Video Showing NYPD Officers Handcuffing Homeless Woman Sparks Outcry</h2>
+                    </a>
+                    <p>A video showing police pinning and handcuffing a homeless woman on Friday prompted responses on social media and from city government and mental health professionals.</p>
+                  </div>
+                    
+                  <div class="innerMoreStories">
+                    <a href="#" class="moreStoriesImg">
+                      <img src="assets/images/donald-trump-michael-jackson.jpg" alt="Latest News Image 1">
+                    </a>
+      
+                    <a href="#" class="insideCapTitle moreStoriesTitle">
+                      <h2>Trump Jr Says Dad Gave Away His Video Game to Michael Jackson </h2>
+                    </a>
+                    <p>The 41-year-old was devastated when Donald Trump gave The King of Pop a copy of 'Teenage Mutant Ninja Turtles' for Nintendo.</p>
+                  </div>
+  
+                </div>
+              </div>
+              <!-- END MORE STORIES -->
+
+            </div>
+            <!--END TOP STORY COLUMN-->
+
+            <!-- OPINION -->
+            <div id="third" class="order-3 col-sm-12 order-md-1 col-md-12 col-lg-3 containerOf">
+              <div class="sticky-top" id="opinion">
+                <a href="#" class="sectionTitle">
+                  <h4>OPINION</h4>
+                </a>
+          
+                <div class="insideOpinion">
+                  <a href="#" class="opinionImg"><img src="assets/images/marc-schulman.png" alt="Mac Schulman"></a>
+                  <div class="opinionText">
+                  <a href="#" class="opinionTitle">
+                    <h4>Netanyahu Finally Goes to War—Against His Own Justice System</h4>
+                  </a>
+                    <p class="opinionSub">BY MARC SCHULMAN</p>
+                  </div>
+                </div>
+          
+                <div class="insideOpinion">
+                  <a href="#" class="opinionImg"><img src="assets/images/nancy-wang-yuen.png" alt="Nancy Wang"></a>
+                  <div class="opinionText">
+                    <a href="#" class="opinionTitle">
+                      <h4>Julia Roberts as Harriet Tubman? Yes, Welcome to Hollywood </h4>
+                    </a>
+                    <p class="opinionSub">BY NANCY WANG YUEN</p>
+                  </div>
+                </div>
+          
+                <div class="insideOpinion">
+                  <a href="#" class="opinionImg"><img src="assets/images/charlie-kirk.png" alt="Charlie Kirk"></a>
+                  <div class="opinionText">
+                    <a href="#" class="opinionTitle">
+                      <h4>Donald Trump Is No Richard Nixon</h4>
+                    </a>
+                    <p class="opinionSub">BY  CHARLIE KIRK</p>
+                  </div>
+                </div>
+          
+                <div class="insideOpinion">
+                  <a href="#" class="opinionImg"><img src="assets/images/robert-reich.png" alt="Robert Reich"></a>
+                  <div class="opinionText">
+                    <a href="#" class="opinionTitle">
+                      <h4>Establishment Economists Say Warren's Tax Would Hinder Growth. Baloney</h4>
+                    </a>
+                    <p class="opinionSub">BY ROBERT REICH</p>
+                  </div>
+                </div>
+          
+                <div class="insideOpinion">
+                  <a href="#" class="opinionImg"><img src="assets/images/tom-van-laer.png" alt="Tom Van Laer"></a>
+                  <div class="opinionText">
+                    <a href="#" class="opinionTitle">
+                      <h4>Climate Change Is Good </h4>
+                    </a>
+                    <p class="opinionSub">BY TOM VAN LAER/p>
+                  </div>
+                </div>
+          
+                <div class="insideOpinion">
+                  <a href="#" class="opinionImg"><img src="assets/images/corita-brown-sean-thomas-breitfeld.png" alt="Corita Brown Sean"></a>
+                  <div class="opinionText">
+                    <a href="#" class="opinionTitle">
+                      <h4>'OK Boomer' Is Whitewashing Today's Generation Gap </h4>
+                    </a>
+                    <p class="opinionSub">BY CORITA BROWN AND SEAN THOMAS-BREITFIELD</p>
+                  </div>
+                </div>
+          
+                <!--LATEST NEWS BEGINS HERE-->
+                <div id="latestNews">
+                  <a href="#" class="sectionTitle">
+                    <h4>LATEST NEWS</h4>
+                  </a>
+                </div>
+  
+                <div class="insideLatestNews">
+  
+                  <div class="row insideOpinion">
+                    <a href="#" class="col-5 col-md-2 col-lg-6 col-xl-5 latestNewsImage"><img src="assets/images/sir-tim-berners-lee.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-10 col-lg-6 col-xl-7 latestNewsText opinionText">
+                      <a href="#" class="latestNewsTitle opinionTitle">
+                        <h4>Targeted Political Ads During 2020 Election Threaten to 'Subvert Democracy'</h4>
+                      </a>
+                    </div>
+                  </div>
+  
+                  <div class="row insideOpinion">
+                    <a href="#" class="col-5 col-md-2 col-lg-6 col-xl-5 latestNewsImage"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-10 col-lg-6 col-xl-7 latestNewsText opinionText">
+                      <a href="#" class="latestNewsTitle opinionTitle">
+                        <h4>Businessman Donates Hitler's Possessions Bought at Auction to Jewish Group</h4>
+                      </a>
+                    </div>
+                  </div>
+  
+                  <div class="row insideOpinion">
+                    <a href="#" class="col-5 col-md-2 col-lg-6 col-xl-5 latestNewsImage"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-10 col-lg-6 col-xl-7 latestNewsText opinionText">
+                      <a href="#" class="latestNewsTitle opinionTitle">
+                        <h4>Goo Hara Fans Petition for Further Investigation Into Assault Allegations</h4>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div class="row insideOpinion">
+                    <a href="#" class="col-5 col-md-2 col-lg-6 col-xl-5 latestNewsImage"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-10 col-lg-6 col-xl-7 latestNewsText opinionText">
+                      <a href="#" class="latestNewsTitle opinionTitle">
+                        <h4>60 Doctors Write Letter Warning Julian Assange 'Could Die in Prison'</h4>
+                      </a>
+                    </div>
+                  </div>
+  
+                  <div class="row insideOpinion">
+                    <a href="#" class="col-5 col-md-2 col-lg-6 col-xl-5 latestNewsImage"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-10 col-lg-6 col-xl-7 latestNewsText opinionText">
+                      <a href="#" class="latestNewsTitle opinionTitle">
+                        <h4>US Politicians Celebrate Hong Kong Pro-Democracy Landslide: 'Freedom Wins!'</h4>
+                      </a>
+                    </div>
+                  </div>
+  
+                  <div class="row insideOpinion">
+                    <a href="#" class="col-5 col-md-2 col-lg-6 col-xl-5 latestNewsImage"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-10 col-lg-6 col-xl-7 latestNewsText opinionText">
+                      <a href="#" class="latestNewsTitle opinionTitle">
+                        <h4>GERD Awareness Week: Gastrointestinal Disease Affects 1 out of 5 Americans</h4>
+                      </a>
+                    </div>
+                  </div>
+  
+                  <div class="row insideOpinion">
+                    <a href="#" class="col-5 col-md-2 col-lg-6 col-xl-5 latestNewsImage"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-10 col-lg-6 col-xl-7 latestNewsText opinionText">
+                      <a href="#" class="latestNewsTitle opinionTitle">
+                        <h4>Circus Acrobat Plunges 12 Feet to the Ground in 'Horrific' Accident</h4>
+                      </a>
+                    </div>
+                  </div>
+        
+                </div>
+                <!-- END LATEST NEWS -->
+  
+                <!-- SPONSORED INSIGHTS -->
+                <div id="sponsoredRight">
+                  <figure id="nine" class="insideFig">
+                    <a href="#" class="figImg"><img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page 1"></a>
+            
+                    <figcaption class="insideCaption">
+                      <div class="genreDiv">
+                        <a href="#" class="genre blue">SPONSORED INSIGHT</a>
+                      </div>
+              
+                      <a href="#" class="insideCapTitle">
+                        <h2>This Contains a Very Important and Relevant Title.</h2>
+                      </a>
+                      <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I
+                      could be long, but I am a paragraph.</p>
+                    </figcaption>
+                  </figure>
+
+                <!-- SIGN UP NEWSLETTER BOX -->
+                  <div>
+                  <div id="signUpBox">
+                    <div id="signUpIconTitle">
+                      <img src="images/littleN.png" alt="Little Sign Up N Logo Newsweek" id="boxImage">
+                      <h2 id="boxTitle">SIGN UP FOR OUR NEWSLETTER</h2>
+                    </div>
+  
+                    <a href="#" id="boxSignUp">SIGN UP ></a>
+                    <br>
+                    <a href="#" id="boxUpdate">Update your preferences >></a>
+                  </div>
+                  </div>
+                <!--END SIGN UP NEWSLETTER BOX-->
+
+                <!-- SPONSORED INSIGHTS CONTINUES -->
+                  <figure id="ten" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                    <div class="genreDiv">
+                      <a href="#" class="genre blue">SPONSORED INSIGHT</a>
+                    </div>
+            
+                    <a href="#" class="insideCapTitle">
+                      <h2>This Contains a Very Important and Relevant Title.</h2>
+                    </a>
+                    <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I
+                    could be long, but I am a paragraph.</p>
+                  </figcaption>
+                  </figure>
+
+                  <figure id="eleven" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                    <div class="genreDiv">
+                      <a href="#" class="genre blue">SPONSORED INSIGHT</a>
+                    </div>
+            
+                    <a href="#" class="insideCapTitle">
+                    <h2>This Contains a Very Important and Relevant Title.</h2>
+                    </a>
+                    <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I
+                    could be long, but I am a paragraph.</p>
+                  </figcaption>
+                  </figure>
+
+                  <figure id="twelve" class="insideFig">
+                  <a href="#" class="figImg"><img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page 1"></a>
+          
+                  <figcaption class="insideCaption">
+                    <div class="genreDiv">
+                      <a href="#" class="genre blue">SPONSORED INSIGHT</a>
+                    </div>
+            
+                    <a href="#" class="insideCapTitle">
+                    <h2>This Contains a Very Important and Relevant Title.</h2>
+                    </a>
+                    <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I
+                    could be long, but I am a paragraph.</p>
+                  </figcaption>
+                  </figure>
+
+                </div>
+                <!-- END SPONSORED INSIGHTS RIGHT -->
+
+              </div> 
+            </div>
+            <!-- END OPINION COLUMN HAS 2 CLOSING DIVS -->
+          
+          </div>  
+        </div>
+        <!--END OF INSIDE MAIN HAS 2 CLOSING DIVS-->
+
+        <!-- THE BOTTOM HALF OF PAGE BEGINS HERE  -->
+        <div id="bottomHalf" class="container-fluid row">
+
+          <div class="col-12 col-md-3" id="andrewYang">
+            <img src="assets/images/november-29-2019-cover.jpg" alt="Andrew Yank Cover NewsWeek Page">
+            <a href="#" class="issue">November 29 ISSUE</a>
+            <div class="underImg">
+              <a href="#">SEE ALL FEATURES ></a>
+            </div>
+          </div>
+
+          <!-- IN THE MAGAZINE TOP START -->
+          <div id="inTheMagazineSectionTop" class="container-fluid col-12 col-md-9">
+
+            <div class="secDivisor">
+              <div class="divisorImg">
+                <img src="images/littleN.png" alt="Little N logo Newsweek page">
+              </div>
+              <h2 class="inTheTitle">IN THE MAGAZINE</h2>
+            </div>
+  
+            <div id="inMagazine">
+              
+              <div class="inMagTop">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="inMagText">
+                  <p class="cover">COVER</p>
+                  <a href="#" class="insideGenre">POLITICS</a>
+                </div>
+                <a href="#" class="insideCapTitle">
+                    <h2>Andrew Yang: Math, Jobs and the Robot Future</h2>
+                  </a>
+              </div>
+  
+              <div class="inMagTop">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="inMagText">
+                  <p class="cover">PERISCOPE</p>
+                  <a href="#" class="insideGenre">WORLD</a>
+                </div>
+                <a href="#" class="insideCapTitle">
+                  <h2>Tug of War: Photographs Capture Horror of Turkey's Offensive Into Syria </h2>
+                </a>
+              </div>
+  
+              <div class="inMagTop">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="inMagText">
+                  <p class="cover">PERISCOPE</p>
+                  <a href="#" class="insideGenre">POLITICS</a>
+                </div>
+                <a href="#" class="insideCapTitle">
+                  <h2>Sheldon Whitehouse On Impeachment, Court-Packing and "Getting to 67 Votes"</h2>
+                </a>
+              </div>
+      
+            </div>
+          </div>       
+            <!-- IN THE MAGAZINE TOP END -->
+  
+            <!-- IN THE MAGAZINE BOTTOM START-->
+          <div id="inTheMagazineSectionBottom" class="container-fluid col-12">
+            <div class="container-fluid" id="inMagazine2">
+              
+              <div class="col-12 col-md-3 col-lg-3 inMag" id="firstInMag">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="inMagText">
+                  <p class="cover">COVER</p>
+                  <a href="#" class="insideGenre">POLITICS</a>
+                </div>
+                <a href="#" class="insideCapTitle">
+                  <h2>Andrew Yang: Math, Jobs and the Robot Future</h2>
+                </a>
+              </div>
+  
+              <div class="col-12 col-md-3 col-lg-3 inMag">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="inMagText">
+                  <p class="cover">DOWNTIME</p>
+                  <a href="#" class="insideGenre">CULTURE</a>
+                </div>
+                <a href="#" class="insideCapTitle">
+                  <h2>The Literary Influences of Superstar Musician David Bowie</h2>
+                </a>
+              </div>
+  
+              <div class="col-12 col-md-3 col-lg-3 inMag">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="inMagText">
+                  <p class="cover">FEATURES</p>
+                  <a href="#" class="insideGenre">CULTURE</a>
+                </div>
+                <a href="#" class="insideCapTitle">
+                  <h2>9 Larger-Than-Life Sculpture Parks Around the World</h2>
+                </a>
+              </div>
+  
+              <div class="col-12 col-md-3 col-lg-3 inMag">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="inMagText">
+                  <p class="cover">DOWNTIME</p>
+                  <a href="#" class="insideGenre">CULTURE</a>
+                </div>
+                <a href="#" class="insideCapTitle">
+                  <h2>Kelly McCreary on the Writers of 'Grey's Anatomy' and Getting Out the Vote</h2>
+                </a>
+              </div>
+
+            </div>
+          </div>    
+          <!-- IN THE MAGAZINE BOTTOM END-->
+
+          <!-- EDITOR'S PICK START -->
+          <div class="col-12 secDivisor">
+            <div class="divisorImg">
+              <img src="images/littleN.png" alt="Little N logo Newsweek page">
+            </div>
+            <h2 class="inTheTitle">EDITOR'S PICK</h2>
+          </div>
+  
+          <div class="container-fluid col-12 removingPadding">
+              <div class="container-fluid" id="editorsPick">
+
+              <div class="col-12 col-md-6 col-lg-3 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="genreDiv">
+                  <a href="#" class="genre">POLITICS</a>
+                </div>
+                <a href="#" class="insideCapTitle editorSecTitle">
+                  <h2>Lawmakers Have Their Strategies for Impeachment Hearings—and They're Sticking to Them</h2>
+                </a>
+                <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I could be long, but I am a paragraph.</p>        
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="insideCapTitle editorSecTitle">
+                  <h2>Lawmakers Have Their Strategies for Impeachment Hearings—and They're Sticking to Them</h2>
+                </a>
+                <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I could be long, but I am a paragraph.</p>        
+              </div>
+              
+              <div class="col-12 col-md-6 col-lg-3 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="insideCapTitle editorSecTitle">
+                  <h2>Lawmakers Have Their Strategies for Impeachment Hearings—and They're Sticking to Them</h2>
+                </a>
+                <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I could be long, but I am a paragraph.</p>        
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="genreDiv">
+                  <a href="#" class="genre">POLITICS</a>
+                </div>
+                <a href="#" class="insideCapTitle editorSecTitle">
+                  <h2>Lawmakers Have Their Strategies for Impeachment Hearings—and They're Sticking to Them</h2>
+                </a>
+                <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I could be long, but I am a paragraph.</p>        
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container-fluid col-12 removingPadding">
+            <div class="container-fluid" id="editorsPick2">
+
+              <div class="col-12 col-md-6 col-lg-3 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="insideCapTitle editorSecTitle">
+                  <h2>Lawmakers Have Their Strategies for Impeachment Hearings—and They're Sticking to Them</h2>
+                </a>
+                <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I could be long, but I am a paragraph.</p>        
+              </div>
+                  
+              <div class="col-12 col-md-6 col-lg-3 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="insideCapTitle editorSecTitle">
+                  <h2>Lawmakers Have Their Strategies for Impeachment Hearings—and They're Sticking to Them</h2>
+                </a>
+                <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I could be long, but I am a paragraph.</p>        
+              </div>
+    
+              <div class="col-12 col-md-6 col-lg-3 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="genreDiv">
+                  <a href="#" class="genre">POLITICS</a>
+                </div>
+                <a href="#" class="insideCapTitle editorSecTitle">
+                  <h2>Lawmakers Have Their Strategies for Impeachment Hearings—and They're Sticking to Them</h2>
+                </a>
+                <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I could be long, but I am a paragraph.</p>        
+              </div>
+    
+              <div class="col-12 col-md-6 col-lg-3 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <div class="genreDiv">
+                  <a href="#" class="genre">POLITICS</a>
+                </div>
+                <a href="#" class="insideCapTitle editorSecTitle">
+                  <h2>Lawmakers Have Their Strategies for Impeachment Hearings—and They're Sticking to Them</h2>
+                </a>
+                <p>I'm a paragraph holding very detailed, very important, and relevant information. I could be short and I could be long, but I am a paragraph.</p>        
+              </div>
+
+
+            </div>
+          </div>
+          <!-- EDITOR'S PICK END -->
+
+          <!-- FEATURED SLIDESHOWS START -->
+          <div class="col-12 secDivisor">
+            <div class="divisorImg">
+              <img src="images/doublelittleN.png" alt="Double Little N logo Newsweek page">
+            </div>
+            <h2 class="inTheTitle">FEATURED SLIDESHOWS</h2>
+          </div>
+
+          <div class="container-fluid col-12 removingPadding">
+              <div class="container-fluid featuredSlides">
+
+              <div class="col-12 col-md-4 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="numberOfSlides"><img src="images/numberImg.JPG" alt="Number of Slides Image NewsWeek Page"></a>
+                <a href="#" class="insideCapTitle featuredSlidesTitle">
+                  <h2>A Look at Every Starbucks Winter Holiday Cup By Year from 1997 to 2019</h2>
+                </a>    
+              </div>
+
+              <div class="col-12 col-md-4 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="numberOfSlides"><img src="images/numberImg.JPG" alt="Number of Slides Image NewsWeek Page"></a>
+                <a href="#" class="insideCapTitle featuredSlidesTitle">
+                  <h2>What Starbucks Christmas Holiday Drinks Are Available This Year?</h2>
+                </a>    
+              </div>
+
+              <div class="col-12 col-md-4 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="numberOfSlides"><img src="images/numberImg.JPG" alt="Number of Slides Image NewsWeek Page"></a>
+                <a href="#" class="insideCapTitle featuredSlidesTitle">
+                  <h2>Meet the Master Carver Who Turns Pumpkins Into Portraits</h2>
+                </a>    
+              </div>
+
+              <div class="col-12 col-md-4 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="numberOfSlides"><img src="images/numberImg.JPG" alt="Number of Slides Image NewsWeek Page"></a>
+                <a href="#" class="insideCapTitle featuredSlidesTitle">
+                  <h2>A Look at Every Starbucks Winter Holiday Cup By Year from 1997 to 2019</h2>
+                </a>    
+              </div>
+
+              <div class="col-12 col-md-4 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="numberOfSlides"><img src="images/numberImg.JPG" alt="Number of Slides Image NewsWeek Page"></a>
+                <a href="#" class="insideCapTitle featuredSlidesTitle">
+                  <h2>What Starbucks Christmas Holiday Drinks Are Available This Year?</h2>
+                </a>    
+              </div>
+
+              <div class="col-12 col-md-4 inMag editorsSec">
+                <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                <a href="#" class="numberOfSlides"><img src="images/numberImg.JPG" alt="Number of Slides Image NewsWeek Page"></a>
+                <a href="#" class="insideCapTitle featuredSlidesTitle">
+                  <h2>Meet the Master Carver Who Turns Pumpkins Into Portraits</h2>
+                </a>    
+              </div>
+
+            </div>
+          </div>
+          <!-- FEATURED SLIDESHOWS END -->
+
+          <!-- LAST SECTION BEGINS HERE -->
+            <!-- ONE -->
+            <div class="col-12 secDivisor"></div>
+
+            <div class="container-fluid col-12 removingPadding">
+              <div class="container-fluid featuredSlides">
+
+                <div class="col-12"><a href="#" class="lastGenres"><h4>U.S.</h4></a></div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Kurt Volker Defends Bidens, Says Corruption Allegations Are 'Self-Serving'</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Ohio Mom Sentenced to 37 Years for Suffocating 3 Sons Out of Jealousy</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec theVeryLastSec">
+                  
+                  <div class="row lastSec">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>'Epstein Didn't Kill Himself' Voiced at BravoCon 'Real Housewives' Cabaret</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec lastSecBorderHere paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Trump May Be Forced to Testify in 'Apprentice' Defamation Case After Ruling</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Vindman Praised After He Explains Why He Wasn't Afraid To Testify</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              
+              </div>
+            </div>
+            <!-- END ONE -->
+
+            <!-- TWO -->
+            <div class="col-12 secDivisor"></div>
+
+            <div class="container-fluid col-12 removingPadding">
+              <div class="container-fluid featuredSlides">
+
+                <div class="col-12"><a href="#" class="lastGenres"><h4>World</h4></a></div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Kurt Volker Defends Bidens, Says Corruption Allegations Are 'Self-Serving'</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Ohio Mom Sentenced to 37 Years for Suffocating 3 Sons Out of Jealousy</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec theVeryLastSec">
+                  
+                  <div class="row lastSec">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>'Epstein Didn't Kill Himself' Voiced at BravoCon 'Real Housewives' Cabaret</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec lastSecBorderHere paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Trump May Be Forced to Testify in 'Apprentice' Defamation Case After Ruling</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Vindman Praised After He Explains Why He Wasn't Afraid To Testify</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              
+              </div>
+            </div>
+            <!-- END TWO -->
+
+            <!-- THREE -->
+            <div class="col-12 secDivisor"></div>
+
+            <div class="container-fluid col-12 removingPadding">
+              <div class="container-fluid featuredSlides">
+
+                <div class="col-12"><a href="#" class="lastGenres"><h4>Business</h4></a></div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Kurt Volker Defends Bidens, Says Corruption Allegations Are 'Self-Serving'</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Ohio Mom Sentenced to 37 Years for Suffocating 3 Sons Out of Jealousy</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec theVeryLastSec">
+                  
+                  <div class="row lastSec">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>'Epstein Didn't Kill Himself' Voiced at BravoCon 'Real Housewives' Cabaret</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec lastSecBorderHere paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Trump May Be Forced to Testify in 'Apprentice' Defamation Case After Ruling</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Vindman Praised After He Explains Why He Wasn't Afraid To Testify</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              
+              </div>
+            </div>
+            <!-- END THRE -->
+
+            <!-- FOUR -->
+            <div class="col-12 secDivisor"></div>
+
+            <div class="container-fluid col-12 removingPadding">
+              <div class="container-fluid featuredSlides">
+
+                <div class="col-12"><a href="#" class="lastGenres"><h4>Tech & Science</h4></a></div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Kurt Volker Defends Bidens, Says Corruption Allegations Are 'Self-Serving'</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Ohio Mom Sentenced to 37 Years for Suffocating 3 Sons Out of Jealousy</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec theVeryLastSec">
+                  
+                  <div class="row lastSec">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>'Epstein Didn't Kill Himself' Voiced at BravoCon 'Real Housewives' Cabaret</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec  lastSecBorderHere paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Trump May Be Forced to Testify in 'Apprentice' Defamation Case After Ruling</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Vindman Praised After He Explains Why He Wasn't Afraid To Testify</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              
+              </div>
+            </div>
+            <!-- END FOUR -->
+
+            <!-- FIVE -->
+            <div class="col-12 secDivisor"></div>
+
+            <div class="container-fluid col-12 removingPadding">
+              <div class="container-fluid featuredSlides">
+
+                <div class="col-12"><a href="#" class="lastGenres"><h4>Culture</h4></a></div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Kurt Volker Defends Bidens, Says Corruption Allegations Are 'Self-Serving'</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Ohio Mom Sentenced to 37 Years for Suffocating 3 Sons Out of Jealousy</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec theVeryLastSec">
+                  
+                  <div class="row lastSec">
+                      <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                      <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>'Epstein Didn't Kill Himself' Voiced at BravoCon 'Real Housewives' Cabaret</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec lastSecBorderHere paddTopHere">
+                      <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                      <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Trump May Be Forced to Testify in 'Apprentice' Defamation Case After Ruling</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Vindman Praised After He Explains Why He Wasn't Afraid To Testify</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              
+              </div>
+            </div>
+            <!-- END FIVE -->
+
+            <!-- SIX -->
+            <div class="col-12 secDivisor"></div>
+
+            <div class="container-fluid col-12 removingPadding">
+              <div class="container-fluid featuredSlides">
+
+                <div class="col-12"><a href="#" class="lastGenres"><h4>Sports</h4></a></div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Kurt Volker Defends Bidens, Says Corruption Allegations Are 'Self-Serving'</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec">
+                  <img src="assets/images/placeholder.jpg" alt="Filler image for the Newsweek Page">
+                  <a href="#" class="insideCapTitle editorSecTitle">
+                    <h2>Ohio Mom Sentenced to 37 Years for Suffocating 3 Sons Out of Jealousy</h2>
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-4 inMag editorsSec theVeryLastSec">
+                  
+                  <div class="row lastSec">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 col-lg-6 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>'Epstein Didn't Kill Himself' Voiced at BravoCon 'Real Housewives' Cabaret</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec lastSecBorderHere paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Trump May Be Forced to Testify in 'Apprentice' Defamation Case After Ruling</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row lastSec paddTopHere">
+                    <a href="#" class="col-5 col-md-7 col-lg-6 lastSecImg"><img src="assets/images/placeholder.jpg" alt="Latest News Image 1"></a>
+                    <div class="col-7 col-md-5 lastSecText">
+                      <a href="#" class="opinionTitle">
+                        <h4>Vindman Praised After He Explains Why He Wasn't Afraid To Testify</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              
+              </div>
+            </div>
+            <!-- END SIX -->
+          <!-- LAST SECTION ENDS HERE -->
+          
+          <!-- HERE GOES THE PREFOOTER -->
+          <div class="col-12 secDivisor preFooterDivisor"></div>
+
+          <div class="container-fluid row hereLast">
+            
+            <div id="prefooter">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-7 almostLast">
+                
+                <a href="#" class="lastGenres theVeryLastGenres"><h4>SUBSCRIBE</h4></a>
+                
+                <div class="insideTheVeryLast">
+                  <div class="insideTheVeryLastSecImgs">
+                    <div id="imageOne"><img src="images/novemberIssues.jpg" alt="November Issue 1 NewsWeek Page"></div>
+                    <div id="imageTwo"><img src="images/novemberIssues2.jpg" alt="November Issue NewsWeek Page" id="onTopOfIssueOne"></div>
+                  </div>
+    
+                  <div class="insideTheVeryLastSec">
+                    <h3 class="theVeryLastTitle">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+                    <p class="theVeryLastP">All Access + Weekly Delivery. Choose A Membership That's Perfect for You!</p>
+                    <a href="#" class="theVeryLastButton">SUBSCRIBE ></a>
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="col-12 col-sm-12 col-md-12 col-lg-5 last">
+                
+                <a href="#" class="lastGenres theVeryLastGenres"><h4>NEWSLETTER</h4></a>
+                
+                <div class="insideTheUltimateVeryLast">
+                  <div class="insideTheUltimateVeryLastSecImgs">
+                    <img src="images/starting5.png" alt="Starting 5 image" id="imageGoesHere">
+                  </div>
+    
+                  <div class="insideTheUltimateVeryLastSec">
+                    <h3 class="theVeryLastTitle">The Starting 5</h3>
+                    <p class="theVeryLastP">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
+                    <a href="#" class="theVeryLastButton">SIGN UP ></a>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+
+          </div>
+          <!-- HERE ENDS THE PREFOOTER YAY!!!!! -->
+
+        </div>
+        <!-- THE BOTTOM HALF OF PAGE ENDS HERE  -->
+
+    </main>
+
+    <footer>
+      <div id="insideFooter" class="container-fluid">
+
+        <div id="topPart" class="row">
+  
+          <div id="logoCr" class="col-lg-6 col-md-7 col-sm-5">
+            <img src="images/logoBottom.png" alt="Red Logo in Footer of Newsweek Page">
+            <p>&copy; 2019 NEWSWEEK</p>
+          </div>
+  
+          <div id="socialIcons" class="col-lg-6 col-md-5 col-sm-12">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+  
+        </div>
+  
+        <div id="bottomPart" class="row">
+  
+          <div id="aboutUs" class="col-lg-8 col-md-12 col-sm-12">
+            <ul class="menu">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Corrections</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Editorial Guidelines</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Terms of Sale</a></li>
+              <li><a href="#">Archive</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Consent preferences</a></li>
+            </ul>
+          </div>
+  
+          <div id="editions" class="col-lg-4 col-md-12 col-sm-12">
+            <ul class="menu">
+              <li>Editions:</li>
+              <li><a href="#">U.S. Edition</a></li>
+              <li><a href="#">日本</a></li>
+              <li><a href="#">한국</a></li>
+              <li><a href="#">Pakistan</a></li>
+              <li><a href="#">Polska</a></li>
+              <li><a href="#">România</a></li>
+            </ul>
+          </div>
+  
+        </div>
+  
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -48,4 +1410,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html>
+</html>  
