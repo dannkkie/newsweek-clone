@@ -40,7 +40,7 @@ nav::before {
 /* Selector for the navbar */
 .navbar {
   background-color: #f72210;
-  height: 50px;
+  height: 69px;
 }
 
 /* Selector for the newsweek logo at the navbar */
@@ -72,11 +72,16 @@ nav::before {
   right: 2px;
 }
 
+#subis {
+  padding-right: 10px;
+}
+
 /* Selector for the subscribe anchor at the navbar */
 .subscribe-navbar {
   background-color: white;
   color: #f72210;
   padding: 6px 3px;
+  padding-right: 10px;
 }
 
 /* Selector for the subscribe anchor at the navbar when hovering */
