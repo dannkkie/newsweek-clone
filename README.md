@@ -1,5 +1,4 @@
-# newsweek-clone
-# Newsweek-Clone-Ara
+# Newsweek Clone
 ## Table Of Contents
 
 * [About the project](#about-the-project)
