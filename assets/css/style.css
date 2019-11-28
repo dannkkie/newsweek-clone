@@ -1078,6 +1078,12 @@ footer {
   #stickySubscribe {
     font-size: 18px;
   }
+
+  .newsweek-nav-logo {
+    width: 200px;
+    height: 20px;
+    margin-left: 0;
+  }
 }
 
 /* MEDIUM VIEW */
