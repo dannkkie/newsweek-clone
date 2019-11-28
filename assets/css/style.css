@@ -141,62 +141,6 @@ nav::before {
   margin-left: 5px;
 }
 
-/* #header-top {
-  position: relative;
-} */
-
-/* #date {
-  font-weight: 400;
-  font-size: 16px;
-  position: absolute;
-  visibility: hidden;
-} */
-
-/* #headerLogo {
-  display: flex;
-  align-items: center;
-} */
-
-/* #largeImg {
-  position: absolute;
-  visibility: hidden;
-} */
-
-/* #accounts {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-} */
-
-/* #signIn {
-  font-weight: bolder;
-  font-size: 14px;
-  padding-right: 15px;
-  text-decoration: none;
-} */
-
-/* #subscribe {
-  background-color: white;
-  color: #f72210;
-  border: none;
-  font-weight: bolder;
-  font-size: 14px;
-  height: 26px;
-} */
-
-/* BOTTOM PART OF TOP NAV */
-
-/* #mainNav {
-  position: absolute;
-  visibility: hidden;
-  display: flex;
-  flex-direction: row;
-  height: 56px;
-  background-color: white;
-  padding: 0;
-  margin-top: 10px;
-} */
-
 #mainNavLinks {
   justify-content: space-around;
   align-items: center;
