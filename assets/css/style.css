@@ -45,11 +45,9 @@ nav::before {
 
 /* Selector for the newsweek logo at the navbar */
 .newsweek-nav-logo {
-  width: 396px;
-  height: 60px;
-  margin-left: 400px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  width: 350px;
+  height: 30px;
+  
 }
 
 /* Selector for the sign in anchor at the navbar */
@@ -72,16 +70,11 @@ nav::before {
   right: 2px;
 }
 
-#subis {
-  padding-right: 10px;
-}
-
 /* Selector for the subscribe anchor at the navbar */
 .subscribe-navbar {
   background-color: white;
   color: #f72210;
   padding: 6px 3px;
-  padding-right: 10px;
 }
 
 /* Selector for the subscribe anchor at the navbar when hovering */
